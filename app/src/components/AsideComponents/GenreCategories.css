@@ -1,0 +1,80 @@
+.container {
+    background-color: white;
+    border-radius: 8px;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border : 5px solid rgba(245, 117, 117, 0.25);
+    padding : 3px;
+}
+.icon i {
+    color: #ff5d5d;
+}
+.head > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head > div > span {
+    font-size: 16px;
+    color: #4c4c4c;
+}
+.head button {
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #f3f3f3;
+    color: #607D8B;
+    padding: 5px 15px;
+    border-radius: 12px;
+    transition: background-color 0.2s ease-in-out;
+    margin: 0 5px;
+    box-shadow: 0 2px 15px rgb(167 163 240 / 39%);
+    border: none;
+    cursor: pointer;
+}
+.head button:hover {
+    background: linear-gradient(to left,#a7a3f0,#57c5f0);
+    color: white;
+}
+.activeButton {
+    background: linear-gradient(to left,#a7a3f0,#57c5f0);
+    color: white !important;
+}
+.movies , .series {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 25px 0;
+}
+.movies li , .series li {
+    width: 33%;
+    text-align: center;
+    margin: 10px 0;
+}
+.movies a , .series a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #2f2f2f;
+}
+.movies a:hover , .series a:hover {
+    color: #2196F3;
+}
+.series {
+    display: none;
+}

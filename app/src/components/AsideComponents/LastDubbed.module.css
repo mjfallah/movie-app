@@ -1,0 +1,122 @@
+.container {
+    background-color: white;
+    border-radius: 8px;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border : 5px solid rgb(13, 201, 13,0.25);
+    padding : 3px;
+}
+.icon i {
+    color: green;
+}
+.head > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head > div > span {
+    font-size: 16px;
+    color: #4c4c4c;
+}
+.head a {
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 400;
+    background-color: #f3f3f3;
+    color: #607D8B;
+    padding: 3px 14px;
+    border-radius: 12px;
+    transition: background-color 0.2s ease-in-out;
+}
+.head a:hover {
+    background-color: #2196F3;
+    color: white;
+}
+.carouselContainer {
+    direction: ltr;
+    padding: 12px;
+    margin: 25px 0;
+}
+.sliderItem{
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.itemOverlay {
+    text-align: right;
+    opacity: .8;
+    background-color: rgb(36, 35, 35);
+    position: absolute;
+    top: 0;
+    left: 2000px;
+    color: white;
+    padding: 5px 10px;
+    height: 100%;
+    font-size: 14px;
+    direction: rtl;
+    transition: left 0.3s ease-in-out;
+    font-size: 12px;
+    width: 100%;
+}
+.sliderItem:hover .itemOverlay{
+    left: 0;
+}
+.itemOverlay > i {
+    position: absolute;
+    top: 43%;
+    right: 50%;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.itemOverlay > span {
+    width: 40%;
+    background-color: #777;
+    color: white !important;
+    opacity: 1;
+    position: absolute;
+    top: -55px;
+    left: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    direction: ltr;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: top 0.3s ease-in-out;
+}
+.itemOverlay:hover > span {
+    top: 5px;
+}
+.itemOverlay > p {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 500px;
+    width: 80%;
+    margin: 0;
+    padding: 0 15px 25px 0;
+    transition: right 0.3s ease-in-out;
+}
+.itemOverlay:hover > p {
+    right: 10px;
+    transition: right 0.3s ease-in-out;
+}
+.itemOverlay > span > i {
+    color: #FFEB3B;
+}

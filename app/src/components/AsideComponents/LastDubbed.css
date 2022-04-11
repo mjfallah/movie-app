@@ -1,0 +1,9 @@
+.asideSlider > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item {
+    opacity: 0.3;
+    
+}
+
+.asideSlider > .owl-carousel > .owl-stage-outer > .owl-stage > .center {
+    opacity: 1;
+    
+}

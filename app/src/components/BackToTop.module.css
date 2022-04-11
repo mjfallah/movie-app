@@ -1,0 +1,22 @@
+.container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+}
+.container > span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #2196F3;
+}
+.container > span > i {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+

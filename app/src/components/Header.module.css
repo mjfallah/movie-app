@@ -1,0 +1,453 @@
+.container {
+  margin-top: 25px;
+  background-color: white;
+}
+/* Upper Container Styles In Header */
+.upContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.searchForm {
+  background-color: #f3f3f3;
+  border-radius: 15px;
+  width: 500px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.searchForm input {
+  background-color: #f3f3f3;
+  color: #505050;
+  border: none;
+  width: calc(100% - 40px);
+  height: 100%;
+  text-indent: 10px;
+}
+.searchForm input:focus {
+  outline: none;
+}
+.searchForm button {
+  background-color: #f3f3f3;
+  color: #505050;
+  border: none;
+  width: 35px;
+  height: 100%;
+  cursor: pointer;
+}
+.darkMood {
+  width: 75px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #f3f3f3;
+  transition: 0.4s;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.slider {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  left: 5px;
+  top: 5px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.moon {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  color: black !important;
+}
+.sun {
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  color: #c5c53a;
+}
+.accountContainer {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.account {
+  display: flex;
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+.insideAvatar {
+  background: linear-gradient(to left, #39bbdb, #1e8cd6);
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.insideAvatar i {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+}
+.insideText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.insideText span:first-child {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #777;
+}
+.insideText span:last-child {
+  text-align: center;
+  font-weight: bold;
+  font-size: 11px;
+  }
+.signInContainer {
+  display: none;
+}
+.signIn {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  border-top: 3px solid #1e8cd6 ;
+}
+.signIn a {
+    background-color: #f3f3f3;
+    text-decoration: none;
+    width: 30%;
+    color:  #777;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+.signIn a:hover {
+    color: #1e8cd6;
+}
+/* Lower Container Styles In Header (menus) */
+.downContainer {
+  margin-right: 30px;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menus{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin: 0;
+}
+.menus > li {
+  margin: 0px 15px;
+  align-self: center;
+  position: relative;
+  height: 40px;
+}
+.menus > li > a {
+  text-decoration: none;
+  color: #505050;
+  font-size: 15px;
+  vertical-align: sub;
+}
+.menus > li > a:hover {
+  color: #1e8cd6;
+}
+.menus > li >i {
+  position: absolute;
+  left : -15px ;
+  bottom: 12px;
+}
+.subMenu {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background: #fff;
+  width: 170px;
+  right: -25px;
+  top: 35px;
+  box-shadow: 0 5px 30px rgb(0 0 0 / 8%);
+  border-radius: 7px;
+  margin-top: 0;
+  padding: 8px 0;
+  transition: all .2s;
+  transform: translate(-20px);
+  z-index: 9;
+}
+.subMenu > li {
+  text-indent: 10px;
+  padding: 5px 0 ;
+}
+.subMenu > li > a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #505050;
+}
+.subMenu > li > a:hover {
+  color: #1e8cd6;
+}
+.menus > li:hover .subMenu {
+  display: block;
+}
+
+
+
+
+.burgerMenu {
+  display:none ;
+}
+.sideHeaderContainer {
+  width: 300px;
+  height: 100vh;
+  background-color : rgb(255, 255, 255);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: -500px;
+  transition: right 0.4s ease-in-out;
+  border-left: 5px solid rgb(151, 145, 145);
+}
+.closeBtn{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  margin: 10px;
+}
+.closeBtn > i {
+  margin: 5px 25px;
+  font-size: 22px;
+  color: #616161;
+}
+
+.sideSearchForm {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  width: 280px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.sideSearchForm input {
+  background-color: #f3f3f3;
+  color: #505050;
+  border: none;
+  width: calc(100% - 40px);
+  height: 100%;
+  text-indent: 10px;
+}
+.sideSearchForm input:focus {
+  outline: none;
+}
+.sideSearchForm button {
+  background-color: #f3f3f3;
+  color: #505050;
+  border: none;
+  width: 35px;
+  height: 100%;
+  cursor: pointer;
+}
+.sideDarkMood {
+  width: 75px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #f3f3f3;
+  transition: 0.4s;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.sideSlider {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  left: 5px;
+  top: 5px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.sideMoon {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  color: black !important;
+}
+.sideSun {
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  color: #c5c53a;
+}
+.dayAndNightContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dayAndNightContainer > span , .dayAndNightContainer > div {
+  margin: 15px;
+}
+
+.sideSignIn {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.sideSignIn a:nth-child(1) {
+  background-color: #e91e63;
+  border: 2px solid #e91e63;
+  text-decoration: none;
+  width: 45%;
+  color:  #fff;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 0 8px;
+  transition: background-color,color 0.3s ease-in-out;
+}
+.sideSignIn a:nth-child(2) {
+  background-color: #00aec5;
+  border: 2px solid #00aec5;
+  text-decoration: none;
+  width: 45%;
+  color:  #fff;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 0 8px;
+  transition: background-color,color 0.3s ease-in-out;
+}
+.sideSignIn a:nth-child(1):hover {
+  color: #e91e63;
+  background-color: #fff;
+  
+}
+.sideSignIn a:nth-child(2):hover {
+  color: #00aec5;
+  background-color: #fff;
+  
+}
+
+.sideMenusContainer {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.sideMenus{
+  height: 50px;
+  margin: 0 16px;
+}
+.sideMenus > li {
+  align-self: center;
+  position: relative;
+  height: 40px;
+  border-bottom: 1px solid #e8edf3;
+}
+.sideMenus > li > a {
+  text-decoration: none;
+  color: #505050;
+  font-size: 15px;
+  vertical-align: -webkit-baseline-middle;
+}
+.sideMenus > li > a:hover {
+  color: #1e8cd6;
+}
+.sideMenus > li >i {
+  position: absolute;
+  right :105px ;
+  bottom: 11px;
+}
+.sideSubMenu {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background: #fff;
+  width: 140px;
+  right: 115px;
+  top: 0px;
+  box-shadow: 0 5px 30px rgb(0 0 0 / 8%);
+  border-radius: 7px;
+  margin-top: 0;
+  padding: 8px 0;
+  z-index: 9;
+}
+.sideSubMenu > li {
+  text-indent: 10px;
+  padding: 5px 0 ;
+}
+.sideSubMenu > li > a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #505050;
+}
+.sideSubMenu > li > a:hover {
+  color: #1e8cd6;
+}
+.sideMenus > li:hover .sideSubMenu {
+  display: block;
+}
+
+@media screen and (max-width : 950px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 10px 0;
+  }
+  .searchFormContainer {
+    display: none;
+  }
+  .darkMood {
+    display: none;
+  }
+  .accountContainer {
+    display: none;
+  }
+  .downContainer {
+    display: none;
+  }
+  .burgerMenu {
+    display:flex ;
+    align-items: center;
+    margin: 0 25px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 8px;
+    height: 60%;
+  }
+}

@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.days {
+    width: 100%;
+}
+.days ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    justify-content: space-evenly;
+    
+}
+.days ul li {
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: grey;
+}
+
+.scheduleContainer {
+    display: none;
+    background-color:#f9f9f9;
+    width: 95%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+@media screen and (max-width : 768px)  {
+    .container {
+        font-size: 11px;
+    }
+    .days ul {
+        padding: 5px;
+    }
+    .days ul li {
+        padding: 5px;
+    }
+}
+@media screen and (max-width : 480px)  {
+    .container {
+        font-size: 9px;
+    }
+    .days ul {
+        padding: 5px;
+    }
+    .days ul li {
+        padding: 5px;
+    }
+}

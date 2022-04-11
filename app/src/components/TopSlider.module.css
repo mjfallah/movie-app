@@ -1,0 +1,103 @@
+.container {
+    direction: ltr;
+    margin-top: 20px;
+    padding: 20px 40px;
+}
+.sliderItem{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.itemOverlay {
+    text-align: right;
+    opacity: .8;
+    background-color: rgb(36, 35, 35);
+    position: absolute;
+    top: 500px;
+    color: white;
+    padding: 5px 10px;
+    height: 100%;
+    font-size: 12px;
+    transition: top 0.3s ease-in-out;
+    direction: rtl;
+}
+.itemOverlay > div {
+    position: absolute ;
+    left: 10px;
+    bottom: 25px;
+    font-size: 20px;
+    color: gold;
+    font-weight: bolder;
+}
+.itemOverlay > div > span {
+    margin-right: 7px;
+}
+.sliderItem:hover .itemOverlay{
+    top: 0;
+}
+.itemTitle > p {
+    text-align: center;
+    text-shadow: 1px 1px 3px #000;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.itemTitle {
+    direction: rtl;
+    position: absolute;
+    width: 95%;
+    bottom: 0;
+    padding: 5px;
+    transition: bottom 0.3s ease-in-out;
+}
+.sliderItem:hover .itemTitle {
+    bottom: 500px;
+}
+ .sliderItem a {
+    text-decoration: none;
+}
+
+@media screen and (max-width : 1024px)  {
+    .itemOverlay {
+        font-size: 12px;
+    }
+    .itemOverlay > div {
+        font-size: 16px;
+    }
+    .itemTitle > p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 900px)  {
+    .itemOverlay {
+        font-size: 10px;
+    }
+    .itemOverlay > div {
+        font-size: 16px;
+    }
+    .itemTitle > p {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width : 768px)  {
+    .itemOverlay {
+        font-size: 10px;
+    }
+    .itemOverlay > div {
+        font-size: 16px;
+    }
+    .itemTitle > p {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width : 520px)  {
+    .itemOverlay {
+        font-size: 8px;
+    }
+    .itemOverlay > div {
+        font-size: 12px;
+    }
+    .itemTitle > p {
+        font-size: 8px;
+    }
+}

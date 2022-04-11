@@ -1,0 +1,20 @@
+@font-face {
+  font-family: iransans;
+  src: url('./iransans.woff') format('woff');
+}
+body {
+  direction: rtl;
+  background-color: #f3f3f3;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: iransans,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+code {
+  font-family: iransans,source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

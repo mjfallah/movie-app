@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+}
+.upperContainer {
+    background-color: #1D1E32;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 20px 30px;
+}
+.upperContainer i {
+    color: white;
+}
+.upperContainer a {
+    text-decoration: none;
+    border: 1px solid #676767;
+    border-radius: 5px;
+    color: #c1c1c1;
+    padding: 5px 10px;
+    margin: 5px 15px;
+    transition: background-color 0.2s ease-in-out;
+}
+.upperContainer a:hover {
+    background-color: #111120;
+    color: #fff;
+}
+.copyRight p {
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #111120;
+    color: #888;
+    padding: 12px ;
+    margin: 0;
+}
+.copyRight i {
+    padding-left: 8px;
+}

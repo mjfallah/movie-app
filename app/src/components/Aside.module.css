@@ -1,0 +1,9 @@
+.socialContainer {
+    width:30%;
+}
+
+@media screen and (max-width : 900px)  {
+    .socialContainer {
+        width: 95%;
+    }
+}
